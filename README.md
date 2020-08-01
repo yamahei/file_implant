@@ -75,3 +75,19 @@ fi.disassemble(IMPLANTED_FILE, OUTPUT_DIR)
   * 結合はコマンド一発
   * jpeg部分のみ抽出
     * 埋め込んだファイルの抽出には触れられていない
+
+### 組み合わせの調査（未確認
+
+#### 後ろにゴミを許すファイル
+* JPEG、MP3、Microsoft Word
+  * [ファイル偽装](https://ja.wikipedia.org/wiki/ファイル偽装)
+* bmp
+  * [クローキングBMP](https://www.wdic.org/w/TECH/クローキングBMP)
+
+#### 前にゴミを許すファイル
+* zip
+  * [【ファイル偽装】zipとしてもjpgとしても扱えるファイル](https://blog.kassyi.com/2013/01/zjpjpg.html)
+* rar
+  * [JPEGにファイルを隠させない方法](http://blog.livedoor.jp/dankogai/archives/50661794.html)
+
+
