@@ -121,6 +121,8 @@ class FileImplant
 
 end
 
+#####
+# CLI
 if $0 == __FILE__ then
     m = FileImplant.new
     usage = [
