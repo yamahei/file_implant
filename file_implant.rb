@@ -86,7 +86,7 @@ class FileImplant
                 #
                 p params = read_footer(footer)
                 size = params[:size].to_i
-                filename = params[:filename].to_s
+                filename = params[:filename].to_s.split(File::SEPARATOR).pop
                 filepath = File.join(output, filename)
                 file_index = index -= size
                 File.open(filepath, 'wb'){|out|
@@ -129,10 +129,9 @@ if $0 == __FILE__ then
         "usage1: #{File.basename(__FILE__)} -a INPUT_FILE1 [INPUT_FILE2 ...] OUTPUT_FILE",
         "usage2: #{File.basename(__FILE__)} -d INPUT_FILE OUTPUT_DIR",
     ].join("\n")
-        
     cmd = ARGV.shift
     if(cmd =~ /-?[aA]/) then
-        abort(usage) if ARGV.size <= 3
+        abort(usage) if ARGV.size < 3
         output = ARGV.pop
         m.assemble(ARGV, output)
     elsif(cmd =~ /-?[dD]/) then

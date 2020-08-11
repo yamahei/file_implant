@@ -87,6 +87,8 @@ fi.disassemble(IMPLANTED_FILE, OUTPUT_DIR)
 #### 前にゴミを許すファイル
 * zip
   * [【ファイル偽装】zipとしてもjpgとしても扱えるファイル](https://blog.kassyi.com/2013/01/zjpjpg.html)
+      * lhaplusでは開けず
+      * 7-zipだと開けた
 * rar
   * [JPEGにファイルを隠させない方法](http://blog.livedoor.jp/dankogai/archives/50661794.html)
 
